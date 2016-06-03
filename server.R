@@ -17,7 +17,7 @@ shinyServer(function(input, output) {
     url <- URLencode(url)
 
     # You can get your own Ocp-Apim-Subscription-Key
-    ans <- POST(url, body = NULL, add_headers("Ocp-Apim-Subscription-Key"="f8f16618074948828176ef9063ba06a0"))
+    ans <- POST(url, body = NULL, add_headers("Ocp-Apim-Subscription-Key"="add_your_subscription_key_here"))
 
     # Convert it to JSON format and check using fromJSON()
     json_ans <- toJSON(content(ans, "parsed", "application/json"))
